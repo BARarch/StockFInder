@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>Enter Ticker Symbol</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style_lulu.css')}}">
+	<div class=page>
+		<h1>User Input</h1>
+
+		<div class=metanav>
+
+			<p>
+				Please enter a stock ticker eg. GOOG, and check desired features.
+			</p>
+
+			<h4>
+				<form id='symbolform_lulu' method='post' action='graph_stock'>
+					<p>
+						Ticker symbol: <input type='text' name='symbol_ticker'> <br/>
+					</p>
+
+					<p>
+						Select Freatures: <br/>
+						<input type='radio' name='symbol_feature' value="{{ans1}}"> {{ans1}} <br/>
+						<input type='radio' name='symbol_feature' value="{{ans2}}"> {{ans2}} <br/>
+						<input type='radio' name='symbol_feature' value="{{ans3}}"> {{ans3}} <br/>
+						<input type='radio' name='symbol_feature' value="{{ans4}}"> {{ans4}} <br/>
+					</p>
+
+					<p>
+						<input type='submit' value='Graph Ticker' />
+					</p>
+				</form>
+			</h4>
+		</div>
+	</div>
+</html>
