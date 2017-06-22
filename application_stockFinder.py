@@ -67,4 +67,4 @@ def graph_stock():
 	return render_template('graph_stock.html', script=script, div=div, ticker=stock)
 
 if __name__ == '__main__':
-	app_stock.run(debug=True)
+	app_stock.run(debug=True, port=5002)
