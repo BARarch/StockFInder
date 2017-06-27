@@ -19,7 +19,7 @@ app_stock.parameters = {}
 app_stock.parameters['features'] = ('Close', 'Adj. Close', 'Open', 'Adj. Open')
 app_stock.nParameters = len(app_stock.parameters)
 
-@app_stock.route('/index_stock',methods=['GET','POST'])
+@app_stock.route('/',methods=['GET','POST'])
 def index_stock():
 	if request.method == 'GET':
 	 a1, a2, a3, a4 = list(app_stock.parameters.values())[0]	
